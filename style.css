@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --color-bg: hsl(210, 36%, 96%);
+    --color-primary: #c59d5f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    width: 100vw;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.title h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.underline {
+    background: var(--color-primary);
+    width: 5rem;
+    height: 5px;
+}
+
+.filter-buttons {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn {
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    padding: 2px 10px;
+    cursor: pointer;
+    transition: color 0.4s ease,
+                background-color 0.4s ease;
+}
+
+.filter-btn:hover {
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.section-center {
+    width: 80%;
+    max-width: 1170px;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+@media (max-width: 1024px) {
+    .section-center {
+        grid-template-columns: 1fr;
+    }
+}
+
+.menu-item {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+    border: 0.25rem solid var(--color-primary);
+    border-radius: 10px;
+}
+
+.item-info {
+    margin: 0.5rem;
+}
+
+.item-info header {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-info h4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.price {
+    color:var(--color-primary)
+}
+
+.item-text {
+    border-top: 2px dotted #dadada;
+    padding: 0.3rem;
+    color: #6b6b6b;
+}
